@@ -1,0 +1,11 @@
+For using scripts in wireguard config:
+
+Create key: HKEY_LOCAL_MACHINE\SOFTWARE\WireGuard
+Create a new DWORD value named: DangerousScriptExecution
+And set its value: 1
+
+
+Route to ping EXTERNALIP from ISP inf:
+
+route add -p EXTERNALIP mask 255.255.255.255 10.5.3.1
+route add -p EXTERNALIP mask 255.255.255.255 10.5.2.1
